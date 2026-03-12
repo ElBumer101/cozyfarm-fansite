@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Descripción
+##  Descripción
 
 Este proyecto es un fan site/wiki no oficial sobre los juegos de CozyFarm Games. El objetivo es crear un espacio donde los jugadores puedan encontrar guías detalladas, información sobre personajes, consejos y recursos útiles.
 
@@ -35,7 +35,7 @@ CozyFarm-FanSite/
 └── sandbox/                # Área de pruebas (no se despliega)
 ```
 
-## 🚀 Estado del Proyecto
+##  Estado del Proyecto
 
 | Sección       | Estado         |
 |---------------|----------------|
@@ -45,13 +45,13 @@ CozyFarm-FanSite/
 | Stardew       | 🔧 En desarrollo|
 | Backend       | ⏳ Pendiente    |
 
-## 🛠️ Tecnologías Usadas
+##  Tecnologías Usadas
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 
-## 💻 Cómo ver el proyecto localmente
+##  Cómo ver el proyecto localmente
 
 1. Clona el repositorio:
    ```bash
@@ -59,15 +59,12 @@ CozyFarm-FanSite/
    ```
 2. Abre `index.html` en tu navegador, o usa una extensión como **Live Server** en VS Code.
 
-## 📌 Notas
+##  Notas
 
 - La carpeta `sandbox/` es un área de pruebas local y **no forma parte del sitio oficial**.
 - El backend está planificado pero aún no implementado.
 
-## 📄 Licencia
+##  Licencia
 
 Este es un proyecto de fans sin fines de lucro. Todos los derechos de los juegos y personajes pertenecen a sus respectivos creadores.
 
----
-
-*Hecho con ❤️ por fans, para fans.*
