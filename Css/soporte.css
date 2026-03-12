@@ -1,0 +1,278 @@
+/* ESTILOS EXCLUSIVOS PARA LA PÁGINA DE CONTACTO/SOPORTE */
+/* Hereda variables y reset de style.css */
+
+.support-page {
+    /* Sobrescribir el estilo de la sección de contacto en el Index para que quede bien grande */
+    background: transparent;
+    padding: 60px 0;
+    margin-bottom: 50px;
+    box-shadow: none;
+    color: var(--text-main);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    border: none;
+    text-align: left;
+}
+
+.support-page::before, .support-page::after {
+    display: none;
+}
+
+/* 1. INFORMACIÓN DE CONTACTO (Izquierda) */
+.contacto-inf {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.contacto-inf h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.contacto-inf p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contacto-inf h3 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.contacto-inf ul {
+    margin-bottom: 30px;
+}
+
+.contacto-inf ul li {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-inf ul li strong {
+    color: var(--primary);
+}
+
+.contacto-inf img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+.contacto-inf img:hover {
+    transform: scale(1.02);
+}
+
+
+/* 2. FORMULARIO DE CONTACTO (Derecha) */
+.formulario-contacto {
+    background: linear-gradient(145deg, var(--card-bg), #222420);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md), var(--shadow-glow);
+    border: 1px solid rgba(134, 167, 137, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.formulario-contacto::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(210, 163, 122, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.formulario-contacto h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-contacto form p {
+    margin: 0;
+    text-align: left;
+    max-width: 100%;
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 1.05rem;
+}
+
+/* Campos de entrada */
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(30, 32, 30, 0.8);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    color: var(--text-main);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    transition: var(--transition);
+    outline: none;
+}
+
+/* Efectos hover/focus */
+.formulario-contacto input[type="text"]:focus,
+.formulario-contacto input[type="email"]:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(134, 167, 137, 0.2);
+    background-color: rgba(30, 32, 30, 1);
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+    color: rgba(163, 168, 160, 0.5);
+}
+
+/* Select */
+.formulario-contacto select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23A3A8A0%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px top 50%;
+    background-size: 12px auto;
+    cursor: pointer;
+}
+
+.formulario-contacto select option {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+/* Checkbox de políticas */
+.formulario-contacto input[type="checkbox"] {
+    accent-color: var(--primary);
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.formulario-contacto input[type="checkbox"] + label {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Contenedor de botones */
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.formulario-contacto button[type="submit"] {
+    background-color: var(--primary);
+    color: #1A1A1A;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    box-shadow: 0 4px 15px rgba(134, 167, 137, 0.3);
+    flex: 2;
+}
+
+.formulario-contacto button[type="submit"]:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(134, 167, 137, 0.5);
+}
+
+.formulario-contacto button[type="reset"] {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    flex: 1;
+}
+
+.formulario-contacto button[type="reset"]:hover {
+    background-color: rgba(255,255,255,0.05);
+    color: var(--text-main);
+    border-color: rgba(255,255,255,0.4);
+}
+
+/* 3. UBICACIÓN ROW ENTERA */
+.ubicacion-container {
+    grid-column: 1 / -1; /* Ocupa ambas columnas */
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.ubicacion-container h3 {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+/* Esconder las líneas <hr> feas */
+hr {
+    display: none;
+}
+
+/* Ajustes Responsive para la página de Contacto */
+@media (max-width: 900px) {
+    .support-page {
+        grid-template-columns: 1fr; /* Apilar en pantallas pequeñas */
+    }
+    
+    .ubicacion-container {
+        grid-column: 1 / -1;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+}
