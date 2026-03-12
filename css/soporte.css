@@ -257,11 +257,6 @@
     margin-bottom: 20px;
 }
 
-/* Esconder las líneas <hr> feas */
-hr {
-    display: none;
-}
-
 /* Ajustes Responsive para la página de Contacto */
 @media (max-width: 900px) {
     .support-page {
